@@ -1,0 +1,19 @@
+{
+    "forin": true,
+    "noarg": true,
+    "noempty": true,
+    "eqeqeq": true,
+    "bitwise": true,
+    "strict": true,
+    "undef": true,
+    "curly": true,
+    "expr": true,
+    "browser": true,
+    "devel": true,
+    "maxerr": 50,
+    "node": true,
+    "globals": {
+        "jQuery": true,
+        "$": true
+    }
+}

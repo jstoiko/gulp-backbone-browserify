@@ -1,0 +1,61 @@
+{
+  "name": "gulp-backbone-browserify",
+  "version": "0.0.1",
+  "description": "Gulp workflow for Backbone.js using Browserify (CommonJS)",
+  "author": "Does it matter? <jstoiko@users.noreply.github.com>",
+  "main": "src/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jstoiko/gulp-backbone-browserify.git"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "node-underscorify"
+    ]
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "underscore": "./node_modules/lodash",
+    "backbone": "./node_modules/backbone/backbone.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "underscore": "_",
+    "backbone": {
+      "depends": [
+        "jquery",
+        "underscore:_"
+      ],
+      "exports": "Backbone"
+    }
+  },
+  "devDependencies": {
+    "backbone": "latest",
+    "backbone-relational": "latest",
+    "browser-sync": "latest",
+    "browserify": "latest",
+    "browserify-shim": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-concat": "2.4.x",
+    "gulp-if": "latest",
+    "gulp-jshint": "latest",
+    "gulp-minify-css": "0.4.x",
+    "gulp-notify": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-usemin": "latest",
+    "html5shiv": "latest",
+    "jquery": "latest",
+    "jshint-stylish": "latest",
+    "lodash": "latest",
+    "merge-stream": "0.1.x",
+    "node-underscorify": "latest",
+    "require-dir": "latest",
+    "run-sequence": "latest",
+    "vinyl-buffer": "latest",
+    "vinyl-source-stream": "latest",
+    "watchify": "latest"
+  }
+}
