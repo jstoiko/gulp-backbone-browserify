@@ -1,0 +1,3 @@
+# Remove once directory is not empty
+*
+!.gitignore
