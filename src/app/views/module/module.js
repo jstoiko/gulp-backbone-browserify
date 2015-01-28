@@ -1,7 +1,5 @@
 'use strict';
 
-var kaka = 1;
-
 var BaseView = require('../_extend/baseView'),
     template = require('./module.html');
 
